@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Reset dasar untuk konsistensi */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Styling untuk kontainer */
+.card {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox untuk list buku */
+ul {
+  display: flex;
+  flex-wrap: wrap; /* Agar item turun ke baris berikutnya jika ruang habis */
+  gap: 15px; /* Jarak antar item */
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  justify-content: center; /* Posisi item di tengah */
+}
+
+li {
+  flex: 0 0 calc(25% - 15px); /* Kotak lebar 25% dengan jarak antar item */
+  max-width: 25%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+li:hover {
+  background: #f0f0f0;
+  transform: translateY(-5px); /* Efek melayang saat hover */
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* Loading dan error */
+p.loading {
+  color: #888;
+  font-style: italic;
+}
+
+p.error {
+  color: red;
+  font-weight: bold;
+}
